@@ -28,12 +28,12 @@ using UnityEngine;
             bool isGrounded = Physics.Raycast(transform.position, - Vector3.up, 1f);
             if (Input.GetKey(KeyCode.LeftArrow)) {
                 _animator.SetBool("isRunning", true);
-                transform.rotation = Quaternion.Euler(0, 260, 0);
-                transform.position += new Vector3(-1, 0, 0) * Time.deltaTime * _config.getMovementSpeed;
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+                transform.position += new Vector3(0, 0, -1) * Time.deltaTime * _config.getMovementSpeed;
             } else if (Input.GetKey(KeyCode.RightArrow)) {
                 _animator.SetBool("isRunning", true);
-                transform.rotation =  Quaternion.Euler(0, 90, 0);
-                transform.position += new Vector3(1, 0, 0) * Time.deltaTime * _config.getMovementSpeed;
+                transform.rotation =  Quaternion.Euler(0, 0, 0);
+                transform.position += new Vector3(0, 0, 1) * Time.deltaTime * _config.getMovementSpeed;
             } else {
                 _animator.SetBool("isRunning", false);
             }
