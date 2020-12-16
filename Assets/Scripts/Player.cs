@@ -14,7 +14,7 @@ using UnityEngine;
 
         private int _numberOfJumps;
 
-        private int _x;
+        private float _x;
 
         // Start is called before the first frame update
         void Start()
