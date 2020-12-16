@@ -24,6 +24,7 @@ using UnityEngine;
 
         public void killPlayer() {
             Debug.Log("The player is dead");
+            //SceneManager.LoadScene("OtherSceneName", LoadSceneMode.Additive);
         }
 
         // Update is called once per frame
