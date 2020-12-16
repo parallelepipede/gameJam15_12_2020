@@ -85,8 +85,8 @@ public class GameEnding : MonoBehaviour
 
             if (GUI.Button(
                 new Rect(
-                    250,
-                    50,
+                    Screen.width / 2 - (buttonWidth / 2),
+                (2 * Screen.height / 3) - (buttonHeight / 2),
                     buttonWidth,
                     buttonHeight), "Main menu"))
             {
@@ -95,8 +95,8 @@ public class GameEnding : MonoBehaviour
 
             if (GUI.Button(
                 new Rect(
-                    250,
-                    160,
+                     Screen.width / 2 - (buttonWidth / 2),
+                     (Screen.height) - (2 * buttonHeight),
                     buttonWidth,
                     buttonHeight), "Play again"))
             {
@@ -109,7 +109,7 @@ public class GameEnding : MonoBehaviour
             const int labelWidth = 800;
             const int labelHeight = 150;
 
-            GUI.Label(new Rect(225, 270, labelWidth, labelHeight), "Final score : " + m_Score.ToString());
+            GUI.Label(new Rect(Screen.width / 2 - (labelWidth / 2), (Screen.height / 3) - (labelHeight / 2), labelWidth, labelHeight), "Final score : " + m_Score.ToString());
         }
     }
 }
