@@ -4,9 +4,12 @@ using UnityEngine;
     namespace deflagration {
     public class Player : MonoBehaviour
     {
+        [SerializeField]
+        private GameEnding _gameEnding;
 
         [SerializeField]
         private ConfigPlayer _config;
+
 
         private Animator _animator;
 
@@ -27,6 +30,7 @@ using UnityEngine;
 
         public void killPlayer() {
             Debug.Log("The player is dead");
+            _gameEnding.DeadPlayer();
             //SceneManager.LoadScene("OtherSceneName", LoadSceneMode.Additive);
         }
 
