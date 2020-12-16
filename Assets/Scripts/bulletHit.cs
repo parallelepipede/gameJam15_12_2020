@@ -29,7 +29,8 @@ public class bulletHit : MonoBehaviour
     {
         if (collision.collider.gameObject.tag == "Player")
         {
-            //collision.collider.gameObject.GetComponent<Script>().death();
+            deflagration.Player p = gameObject.GetComponent(typeof(deflagration.Player)) as deflagration.Player;
+            p.killPlayer();
             Debug.Log("touché");
         }
         if (collision.collider.gameObject.tag == "Movable")
