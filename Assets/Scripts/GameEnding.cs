@@ -80,7 +80,7 @@ public class GameEnding : MonoBehaviour
 
         if (m_IsPlayerAtExit || m_IsPlayerDead)
         {
-            const int buttonWidth = 300;
+            const int buttonWidth = 500;
             const int buttonHeight = 80;
 
             if (GUI.Button(
@@ -106,7 +106,7 @@ public class GameEnding : MonoBehaviour
 
         if (m_IsPlayerAtExit)
         {
-            const int labelWidth = 300;
+            const int labelWidth = 800;
             const int labelHeight = 150;
 
             GUI.Label(new Rect(225, 270, labelWidth, labelHeight), "Final score : " + m_Score.ToString());
