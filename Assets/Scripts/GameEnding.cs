@@ -23,7 +23,7 @@ public class GameEnding : MonoBehaviour
     private int m_Score;
     private float m_Time;
     private bool m_IsPlayerAtExit;
-    private bool m_IsPlayerDead;
+    private bool m_IsPlayerDead = false;
     private float m_Timer;
     private bool m_HasAudioPlayed;
 
