@@ -43,7 +43,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7796093497939532217}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 88fbc109488e1492a80dcbc29da51803, type: 3}
+  m_Asset: {fileID: 0}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -151,5 +151,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982f4f765b96445f0a5d0caf5e4c0632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 3699442489383131626, guid: f0e4e4f8add0b5c49a643aacbb5e34c3, type: 3}
   speed: 2

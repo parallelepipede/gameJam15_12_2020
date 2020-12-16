@@ -29,7 +29,7 @@ public class bulletHit : MonoBehaviour
     {
         if (collision.collider.gameObject.tag == "Player")
         {
-            deflagration.Player p = gameObject.GetComponent(typeof(deflagration.Player)) as deflagration.Player;
+            deflagration.Player p = collision.collider.gameObject.GetComponent(typeof(deflagration.Player)) as deflagration.Player;
             p.killPlayer();
             Debug.Log("touché");
         }
