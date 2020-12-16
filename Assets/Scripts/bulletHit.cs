@@ -30,7 +30,6 @@ public class bulletHit : MonoBehaviour
         if (collision.collider.gameObject.tag == "Player")
         {
             //collision.collider.gameObject.GetComponent<Script>().death();
-            Destroy(gameObject);
             Debug.Log("touché");
         }
         if (collision.collider.gameObject.tag == "Movable")
@@ -38,5 +37,7 @@ public class bulletHit : MonoBehaviour
             GameObject col = collision.collider.gameObject;
             col.GetComponent<Rigidbody>().AddForce(0,forcey,forcez,ForceMode.Impulse);
         }
+
+        Destroy(gameObject);
     }
 }
