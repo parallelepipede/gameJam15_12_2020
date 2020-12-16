@@ -109,7 +109,7 @@ public class GameEnding : MonoBehaviour
             const int labelWidth = 800;
             const int labelHeight = 150;
 
-            GUI.Label(new Rect(Screen.width / 2 - (labelWidth / 2), (Screen.height / 3) - (labelHeight / 2), labelWidth, labelHeight), "Final score : " + m_Score.ToString());
+            GUI.Label(new Rect(Screen.width / 2 - (labelWidth / 2), (Screen.height / 4) - (labelHeight / 2), labelWidth, labelHeight), "Final score : " + m_Score.ToString());
         }
     }
 }
