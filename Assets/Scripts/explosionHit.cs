@@ -7,6 +7,7 @@ public class explosionHit : MonoBehaviour
     private  Rigidbody rb;
     [SerializeField] private GameObject player;
     [SerializeField] private float speed;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -17,7 +18,8 @@ public class explosionHit : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            //col.gameObject.GetComponent<Player>().killPlayer();
+            deflagration.Player p = gameObject.GetComponent(typeof(deflagration.Player)) as deflagration.Player;
+            p.killPlayer();
             Debug.Log("touché");
         }
     
