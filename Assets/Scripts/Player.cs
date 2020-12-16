@@ -14,9 +14,12 @@ using UnityEngine;
 
         private int _numberOfJumps;
 
+        private float _x;
+
         // Start is called before the first frame update
         void Start()
         {
+            _x = transform.position.x;
             _animator = GetComponent<Animator>();
             _rigidBody = GetComponent<Rigidbody>();
             _rigidBody.constraints =  RigidbodyConstraints.FreezeRotation;
@@ -30,6 +33,7 @@ using UnityEngine;
         // Update is called once per frame
         void Update()
         {
+            transform.position = new Vector3(_x, transform.position.y, transform.position.z);
             bool isGrounded = Physics.Raycast(transform.position, - Vector3.up, 1f);
             if (Input.GetKey(KeyCode.LeftArrow)) {
                 _animator.SetBool("isRunning", true);
