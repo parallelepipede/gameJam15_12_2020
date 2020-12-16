@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3190fe24d17d54b41972bcdaaba61820, type: 3}
   m_Name: DataPlayer
   m_EditorClassIdentifier: 
-  _movementSpeed: 10
+  _movementSpeed: 6.6
   _numberOfJump: 2
   _jumpForce: 1000
