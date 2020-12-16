@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92a7f685f05941daa9a98250dce88a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  bullet: {fileID: 0}
-  bulletTime: 0
+  player: {fileID: 1147752367711628, guid: 2abf19653d633114faedf3b60dc6c39f, type: 3}
+  bullet: {fileID: 850672940932346234, guid: dca28daa1b4d346e48d3dab99c8d9307, type: 3}
+  bulletTime: 5
