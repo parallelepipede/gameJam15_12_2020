@@ -19,7 +19,7 @@ public class instantiateBullet : MonoBehaviour
 
     private IEnumerator ShotInterval()
     {
-        shotInterval = Random.Range(2.0f,5.0f);
+        shotInterval = Random.Range(0.5f,3.0f);
         Debug.Log(shotInterval);
         shoot = false;
         yield return new WaitForSeconds(shotInterval);
