@@ -6,7 +6,7 @@ namespace deflagration {
     public class PlayingMusic : MonoBehaviour
     {
 
-        public AudioSource _audioSource;
+        private AudioSource _audioSource;
 
         void Start()
         {
