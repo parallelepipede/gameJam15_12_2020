@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
     namespace deflagration {
     public class Player : MonoBehaviour
     {
+        [SerializeField]
+        private GameEnding _gameEnding;
 
         [SerializeField]
         private ConfigPlayer _config;
+
 
         private Animator _animator;
 
@@ -29,7 +32,10 @@ using UnityEngine.SceneManagement;
 
         public void killPlayer() {
             Debug.Log("The player is dead");
-            SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+            _gameEnding.DeadPlayer();
+
+            //SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+
         }
 
         // Update is called once per frame
