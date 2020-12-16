@@ -33,7 +33,7 @@ using UnityEngine;
         // Update is called once per frame
         void Update()
         {
-            transform.position = new Vector(_x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(_x, transform.position.y, transform.position.z);
             bool isGrounded = Physics.Raycast(transform.position, - Vector3.up, 1f);
             if (Input.GetKey(KeyCode.LeftArrow)) {
                 _animator.SetBool("isRunning", true);
