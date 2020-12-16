@@ -1,7 +1,7 @@
 using UnityEngine;
 
 namespace deflagration {
-    [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Config", order = 1)]
+    [CreateAssetMenu(fileName = "DataPlayer", menuName = "ScriptableObjects/ConfigPlayer", order = 1)]
     public class ConfigPlayer : ScriptableObject
     {
         [SerializeField]
