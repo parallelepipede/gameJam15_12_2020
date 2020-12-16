@@ -29,7 +29,7 @@ public class instantiateBullet : MonoBehaviour
     {
         if (shoot){
             StartCoroutine(ShotInterval());
-            y = Random.Range(0f,8.0f);
+            y = Random.Range(0f,1.0f);
             Transform created = Instantiate(bullet.transform,player.transform.position + new Vector3(0,y,-4),bullet.transform.rotation);
             Destroy(created.gameObject,bulletTime);
         }
