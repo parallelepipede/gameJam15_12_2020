@@ -80,8 +80,8 @@ public class GameEnding : MonoBehaviour
 
         if (m_IsPlayerAtExit || m_IsPlayerDead)
         {
-            const int buttonWidth = 200;
-            const int buttonHeight = 60;
+            const int buttonWidth = 300;
+            const int buttonHeight = 80;
 
             if (GUI.Button(
                 new Rect(
