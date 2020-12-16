@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3699442489383131624}
   - component: {fileID: 3699442489383131625}
   - component: {fileID: 3699442489383131630}
+  - component: {fileID: 6794094788887708608}
   m_Layer: 0
   m_Name: PlayerPrefabs
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_LocalPosition: {x: -2.5104587, y: 3.3855145, z: -1.0882473}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
-  - {fileID: 3699442487948627093}
+  - {fileID: 8958760051223311190}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -76,7 +77,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1001 &3699442487948760603
+--- !u!95 &6794094788887708608
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3699442489383131626}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 02dd6406ed1ebc248b2fafd0485e0de9, type: 3}
+  m_Controller: {fileID: 9100000, guid: b5935dddabd5a7d42979cf03384761e9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &8958760051223701976
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -86,10 +106,6 @@ PrefabInstance:
     - target: {fileID: 100014, guid: 02dd6406ed1ebc248b2fafd0485e0de9, type: 3}
       propertyPath: m_Name
       value: Astronaut
-      objectReference: {fileID: 0}
-    - target: {fileID: 100014, guid: 02dd6406ed1ebc248b2fafd0485e0de9, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 02dd6406ed1ebc248b2fafd0485e0de9, type: 3}
       propertyPath: m_RootOrder
@@ -137,9 +153,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02dd6406ed1ebc248b2fafd0485e0de9, type: 3}
---- !u!4 &3699442487948627093 stripped
+--- !u!4 &8958760051223311190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: 02dd6406ed1ebc248b2fafd0485e0de9,
     type: 3}
-  m_PrefabInstance: {fileID: 3699442487948760603}
+  m_PrefabInstance: {fileID: 8958760051223701976}
   m_PrefabAsset: {fileID: 0}
