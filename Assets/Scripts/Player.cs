@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
     namespace deflagration {
     public class Player : MonoBehaviour
     {
@@ -31,7 +33,9 @@ using UnityEngine;
         public void killPlayer() {
             Debug.Log("The player is dead");
             _gameEnding.DeadPlayer();
-            //SceneManager.LoadScene("OtherSceneName", LoadSceneMode.Additive);
+
+            //SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+
         }
 
         // Update is called once per frame
