@@ -34,7 +34,7 @@ using UnityEngine;
         void Update()
         {
             transform.position = new Vector3(_x, transform.position.y, transform.position.z);
-            bool isGrounded = Physics.Raycast(transform.position, - Vector3.up, 1f);
+            bool isGrounded = Physics.Raycast(transform.position, - Vector3.up, 0.2f);
             if (Input.GetKey(KeyCode.LeftArrow)) {
                 _animator.SetBool("isRunning", true);
                 transform.rotation = Quaternion.Euler(0, 180, 0);
