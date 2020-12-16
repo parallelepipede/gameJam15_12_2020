@@ -24,11 +24,11 @@ using UnityEngine;
         {
             bool isGrounded = Physics.Raycast(transform.position, - Vector3.up, 1f);
             if (Input.GetKey(KeyCode.LeftArrow)) {
-                transform.rotation = new Quaternion(0, 180, 0, 0);
+                transform.rotation = Quaternion.Euler(0, 260, 0);
                 transform.position += new Vector3(-1, 0, 0) * Time.deltaTime * _config.getMovementSpeed;
             }
             if (Input.GetKey(KeyCode.RightArrow)) {
-                transform.rotation = new Quaternion(0, 0, 0, 0);
+                transform.rotation =  Quaternion.Euler(0, 90, 0);
                 transform.position += new Vector3(1, 0, 0) * Time.deltaTime * _config.getMovementSpeed;
             }
 
