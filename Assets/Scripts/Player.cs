@@ -22,6 +22,10 @@ using UnityEngine;
             _rigidBody.constraints =  RigidbodyConstraints.FreezeRotation;
         }
 
+        public void killPlayer() {
+            Console.log("The player is dead");
+        }
+
         // Update is called once per frame
         void Update()
         {
