@@ -8,6 +8,8 @@ using UnityEngine;
         [SerializeField]
         private ConfigPlayer _config;
 
+        private Animator _animator;
+
         private Rigidbody _rigidBody = null;
 
         private int _numberOfJumps;
@@ -15,8 +17,13 @@ using UnityEngine;
         // Start is called before the first frame update
         void Start()
         {
+            _animator = GetComponent<Animator>();
             _rigidBody = GetComponent<Rigidbody>();
             _rigidBody.constraints =  RigidbodyConstraints.FreezeRotation;
+        }
+
+        public void killPlayer() {
+            Debug.Log("The player is dead");
         }
 
         // Update is called once per frame
@@ -24,12 +31,15 @@ using UnityEngine;
         {
             bool isGrounded = Physics.Raycast(transform.position, - Vector3.up, 1f);
             if (Input.GetKey(KeyCode.LeftArrow)) {
-                transform.rotation = Quaternion.Euler(0, 260, 0);
-                transform.position += new Vector3(-1, 0, 0) * Time.deltaTime * _config.getMovementSpeed;
-            }
-            if (Input.GetKey(KeyCode.RightArrow)) {
-                transform.rotation =  Quaternion.Euler(0, 90, 0);
-                transform.position += new Vector3(1, 0, 0) * Time.deltaTime * _config.getMovementSpeed;
+                _animator.SetBool("isRunning", true);
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+                transform.position += new Vector3(0, 0, -1) * Time.deltaTime * _config.getMovementSpeed;
+            } else if (Input.GetKey(KeyCode.RightArrow)) {
+                _animator.SetBool("isRunning", true);
+                transform.rotation =  Quaternion.Euler(0, 0, 0);
+                transform.position += new Vector3(0, 0, 1) * Time.deltaTime * _config.getMovementSpeed;
+            } else {
+                _animator.SetBool("isRunning", false);
             }
 
             if (Input.GetKeyDown(KeyCode.Space)) {
