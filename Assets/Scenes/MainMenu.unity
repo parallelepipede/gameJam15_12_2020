@@ -489,7 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd198a22f10d52443846063d9d0f76c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guiskin: {fileID: 0}
+  guiskin: {fileID: 11400000, guid: d9035a633dcd34b42b8111055f771082, type: 2}
 --- !u!4 &1129363464
 Transform:
   m_ObjectHideFlags: 0

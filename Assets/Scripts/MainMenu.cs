@@ -11,8 +11,8 @@ public class MainMenu : MonoBehaviour
     {
         GUI.skin = guiskin;
 
-        const int buttonWidth = 164;
-        const int buttonHeight = 60;
+        const int buttonWidth = 200;
+        const int buttonHeight = 80;
 
         /*const int labelWidth = 300;
         const int labelHeight = 90;*/
