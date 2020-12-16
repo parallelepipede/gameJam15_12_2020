@@ -10,15 +10,16 @@ public class instantiateBullet : MonoBehaviour
     
     private float shotInterval;
     private bool shoot = true;
+    private float y;
     
     void Start()
     {
-        
+
     }
 
     private IEnumerator ShotInterval()
     {
-        shotInterval = Random.Range(4.0f,8.0f);
+        shotInterval = Random.Range(2.0f,5.0f);
         Debug.Log(shotInterval);
         shoot = false;
         yield return new WaitForSeconds(shotInterval);
@@ -28,7 +29,9 @@ public class instantiateBullet : MonoBehaviour
     {
         if (shoot){
             StartCoroutine(ShotInterval());
-            Instantiate(bullet.transform,player.transform.position + new Vector3(0,1,-4),bullet.transform.rotation);
+            y = Random.Range(0f,8.0f);
+            Transform created = Instantiate(bullet.transform,player.transform.position + new Vector3(0,y,-4),bullet.transform.rotation);
+            Destroy(created.gameObject,bulletTime);
         }
         
     }
