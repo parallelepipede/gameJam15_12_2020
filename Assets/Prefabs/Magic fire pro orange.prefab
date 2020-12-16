@@ -23820,3 +23820,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 100014, guid: 02dd6406ed1ebc248b2fafd0485e0de9, type: 3}
   speed: 2
+  forcey: 20
+  forcez: 20
