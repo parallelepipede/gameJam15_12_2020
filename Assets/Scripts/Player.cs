@@ -23,7 +23,7 @@ using UnityEngine;
         }
 
         public void killPlayer() {
-            Console.log("The player is dead");
+            Debug.Log("The player is dead");
         }
 
         // Update is called once per frame
