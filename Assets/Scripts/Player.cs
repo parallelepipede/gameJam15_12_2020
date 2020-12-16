@@ -42,15 +42,21 @@ using UnityEngine;
                 _animator.SetBool("isRunning", false);
             }
 
+            if (isGrounded) {                    
+                _animator.SetBool("isJumping", false);
+            }
+
             if (Input.GetKeyDown(KeyCode.Space)) {
                 if(isGrounded) {
                     _numberOfJumps = 1;
                     _rigidBody.velocity = Vector3.zero;
                     _rigidBody.AddForce(new Vector3(0, _config.getJumpForce, 0));
+                    _animator.SetBool("isJumping", true);
                 } else if (_numberOfJumps < _config.getNumberOfJump) {
                     _numberOfJumps++;
                     _rigidBody.velocity = Vector3.zero;
                     _rigidBody.AddForce(new Vector3(0, _config.getJumpForce, 0));
+                    _animator.SetBool("isJumping", true);
                 }
             }
 

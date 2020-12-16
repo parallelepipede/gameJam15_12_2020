@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 10
   _numberOfJump: 2
-  _jumpForce: 300
+  _jumpForce: 1000
